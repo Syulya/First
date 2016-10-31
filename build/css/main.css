@@ -1,0 +1,14 @@
+body {
+  color: #6395d9;
+  background: #f7c6d7;
+  font-size: 1.2em; }
+
+div {
+  border: 1px solid white;
+  padding: 10px; }
+
+h1 {
+  font-size: 1.5em; }
+
+.testing {
+  width: 71.42857%; }
