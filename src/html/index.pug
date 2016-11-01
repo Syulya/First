@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-html(lang="en")
-head
-	meta(charset="UTF-8")
-	title Document
+extends ../templates/layout.pug
+block wrapper
+	div.content Это контент!
+	div.content Это контент!
 
-body
-	span.element 
-		|Всем привет, я спан!
-		div gh
+	-i = 0
+	while i<10
+		+breadcrumbs({
+			breadcrumbs:[
+				{
+					name: 'Главная',
+					link: 'index.html'
+				},
+				{
+					name: 'Новость'
+				}
+			]
+		})
+		- i++	
+

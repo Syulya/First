@@ -1,0 +1,10 @@
+mixin breadcrumbs(a)
+	ul.breadcrumbs&attributes(attributes)
+		if a.breadcrumbs
+			each breadcrumb in a.breadcrumbs
+				li
+					if breadcrumb.link
+						a(href="3")
+							span!=breadcrumb.name
+					else
+						span!=breadcrumb.name
