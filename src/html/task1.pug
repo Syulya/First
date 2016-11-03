@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+body
+	form(action="#" method="POST" name="form-login")
+		input(type="text" name="login" autofocus)
+		input(type="password")
+		input(type="file")
+		hr
+		label(for="radio-1") Выбери меня
+		input(type="radio" name="radio-button" value=1 id="radio-1")
+		input(type="radio" name="radio-button" value=2)
+		input(type="checkbox" name="checkbox-button" value="1")
+		input(type="checkbox" name="checkbox-button" value="2")
+		input(type="checkbox" name="checkbox-button" value="3")
+		hr
+		input(type="hidden")
+		input(type="reset")
+		input(type="submit")
+		button(type="send") Отправить
+		button(type="send" formaction="yandex.ru") Яндекс
+		hr
+		input(type="email")
+		input(type="number")
+		input(type="tel")
+		input(type="search")
+		input(type="url")
+		input(type="color")
+		input(type="range")
+		hr
+		select(name="select-first" id="select-unic")
+			option(value="") Элемент1
+			option(value="") Элемент2
+			option(value="") Элемент3
+			option(value="") Элемент4
+		hr
+		textarea(name="", cols="30", rows="10") Это текстовое поле
+
+			

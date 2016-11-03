@@ -1,4 +1,4 @@
-body {
+/*body {
 	color: #6395d9;
 	background: #f8d0dc;
 	font-size: 1.3em;
@@ -9,7 +9,31 @@ div{
 }
 	h1 {
 		font-size: 1.5em;
+	}*/
+
+$blue-color: blue;
+$pink-color: pink;
+$base-font-size: 14px;
+$base-line-height:24px;
+
+@import "parts/buttons.scss";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+html{
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+.content{
+	background-color: $blue-color;
+	width: 100px;
+	height:100px;
+	padding: 10px;
+	border: 10px;
+	margin: 10px;
+	box-sizing: content-box;
+
+	&:hover{
+		height: 200px;
+		width: 200px;
 	}
-.testing {
-	width: percentage(5/7);
 }

@@ -8,3 +8,18 @@ mixin breadcrumbs(a)
 							span!=breadcrumb.name
 					else
 						span!=breadcrumb.name
+
+mixin newsBlocks(a)
+	ul.newsBlock&attributes(attributes)
+		if a.newsBlocks
+				each newsBlock in a.newsBlocks
+					li
+						if newsBlock.link
+							a(href="3")
+								span!=newsBlock.name
+						else
+							span!=newsBlock.name
+
+mixin nblocks(n)
+	each nblock in n
+		li.n=nblock.name

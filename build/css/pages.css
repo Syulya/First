@@ -1,0 +1,31 @@
+body {
+  color: #6395d9;
+  background: #f8d0dc;
+  font-size: 1.3em; }
+
+.hdr {
+  text-align: center; }
+
+.nav {
+  float: left;
+  border: 1px solid white;
+  padding: 10px;
+  margin-right: 30px;
+  min-height: 700px; }
+
+ul {
+  font-size: 18px;
+  list-style: none; }
+
+.main {
+  margin: 0 auto; }
+
+.news {
+  margin-right: 30px; }
+
+h1 {
+  text-align: center; }
+
+.ftr {
+  clear: both;
+  text-align: center; }

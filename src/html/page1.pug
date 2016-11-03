@@ -1,0 +1,39 @@
+extends ../templates/layout1.pug
+block title
+	h3 Page 1
+block header
+	include ../templates/header.pug
+block nav
+	include ../templates/nav.pug
+block news
+	- var newsBlocks = [{name: 'Новость дня',},{name: 'Новости экономики'},{name: 'Новости политики'},{name: 'Общество'}]
+		ul.news 
+			h2 Новости
+			+nblocks(newsBlocks)
+
+
+	-i = 0
+	while i<3
+		+newsBlocks({
+			newsBlocks:[
+				{
+					name: 'Новость дня',
+					link: 'index.html'
+				},
+				{
+					name: 'Новости экономики'
+				},
+				{
+					name: 'Новости политики'
+				},
+				{
+					name: 'Общество'
+				}
+			]
+		})
+		- i++;
+
+	
+	
+block footer
+	include ../templates/footer.pug
